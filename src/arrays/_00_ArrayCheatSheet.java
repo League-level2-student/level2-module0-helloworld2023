@@ -22,13 +22,13 @@ public class _00_ArrayCheatSheet {
 		//7. use a for loop to make every value of the integer array a random number
 		Random r = new Random();
 		for (int a = 0; a < ages.length; a++) {
-			a = r.nextInt(51);
+			ages[a] = r.nextInt(49);
 		}
 		//8. without printing the entire array, print only the smallest number in the array
 		int smallestNumber = ages[0];
 		for (int s = 0; s < ages.length; s++) {
-			if(s < smallestNumber) {
-				smallestNumber = s;
+			if(ages[s] < smallestNumber) {
+				smallestNumber = ages[s];
 			}
 		}
 		System.out.println(smallestNumber);
@@ -39,8 +39,8 @@ public class _00_ArrayCheatSheet {
 		//10. print the largest number in the array.
 		int largestNumber = ages[49];
 		for (int l = 0; l < ages.length; l++) {
-			if(l > largestNumber) {
-				largestNumber = l;
+			if(ages[l] > largestNumber) {
+				largestNumber = ages[l];
 			}
 		}
 		System.out.println(largestNumber);
