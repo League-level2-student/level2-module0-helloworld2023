@@ -24,6 +24,10 @@ for(int s=0;s<robots.length;s++) {
 }
 	//5. use another for loop to iterate through the array and make each robot move 
 	//   a random amount less than 50.
+Random r = new Random();
+for(Robot robot: robots) {
+	robot.move(r.nextInt(50));
+}
 	//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
 boolean finished = false;
 int w = 0;
